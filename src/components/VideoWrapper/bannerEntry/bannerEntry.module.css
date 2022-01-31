@@ -1,0 +1,35 @@
+.bannerEntry {
+    position: absolute;
+    border: 1px solid red;
+    width: 251px;
+    height: 357px;
+    right: 0;
+    top: 219px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #86D3F4;
+    align-items: center;
+}
+.bannerEntry h2 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    text-transform: uppercase ;
+    text-align: center;
+}
+.bannerEntry div {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+.bannerEntry .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 52px;
+    background-color: black;
+    color: #86D3F4;
+}
