@@ -1,0 +1,150 @@
+.phoneForm {
+    height: 100%;
+    background-color: #86D3F4;
+    width: 380px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.phoneForm h2 {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 70px 0 0 0;
+
+}
+
+.phoneForm h3 {
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 37px;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+.phoneForm p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.phoneInput {
+    display: grid;
+    grid-template-columns: repeat(3, 88px);
+    grid-gap: 10px;
+}
+
+.numberButton {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+}
+.numberButton:hover {
+    background: #000000;
+    color: white;
+}
+.span3 {
+    grid-column: span 2;
+}
+.personalData {
+    display: flex;
+    gap: 20px;
+    width: 273px;
+    margin-top: 19px;
+    margin-left: 9px;
+
+
+}
+.personalData input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.personalData .personalDataCheckbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid black;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.personalDataCheckbox:checked+label::before {
+    background-image: url(../../assets/img/btn-check-check.svg);
+}
+.personalData label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #565656;
+    display: flex;
+    align-items: center;
+
+}
+.phoneSubmit {
+    width: 282px;
+    height: 50px;
+    border: 1px solid #4E4E4E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4E4E4E;
+   text-transform: uppercase;
+}
+.exitButton {
+    border: 2px solid black;
+    width: 84px;
+    height: 48px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.phonePage {
+    height: 100%;
+    position: relative;
+    background-image: url('../../assets/img/bgImg.jpg');
+}
+.qrCodeBanner {
+    position: absolute;
+    right: 40px;
+    bottom: 36px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.qrCodeBanner img {
+    width: 110px;
+    height: 110px;
+}
+.qrCodeBanner .qrCodeText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-align: right;
+    color: white;
+}
+.incorrectNumberError {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EA0000;
+}

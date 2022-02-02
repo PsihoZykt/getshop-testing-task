@@ -1,6 +1,5 @@
 .bannerEntry {
     position: absolute;
-    border: 1px solid red;
     width: 251px;
     height: 357px;
     right: 0;
@@ -10,6 +9,7 @@
     justify-content: center;
     background-color: #86D3F4;
     align-items: center;
+    animation: showBanner 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
 }
 .bannerEntry h2 {
     font-size: 16px;
@@ -32,4 +32,13 @@
     height: 52px;
     background-color: black;
     color: #86D3F4;
+}
+
+@keyframes showBanner {
+  0% {
+      visibility: hidden;
+  }
+    100% {
+        visibility: inherit;
+    }
 }
