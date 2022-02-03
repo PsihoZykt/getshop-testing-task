@@ -1,0 +1,59 @@
+.sliderPage {
+    height: 100%;
+    position: relative;
+}
+
+.arrowsWrapper {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    left: 585px;
+    bottom: 23px;
+}
+
+.arrow {
+    width: 52px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(-25deg);
+    background-color: #E8E8E8;
+
+}
+
+.active {
+    background-color: #181D28;
+    color: white;
+}
+
+.active img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(74deg) brightness(107%) contrast(101%);
+}
+
+.arrow img {
+    transform: skewX(25deg);
+
+}
+
+.exitButton {
+    border: 2px solid black;
+    width: 84px;
+    height: 48px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/*.arrowContainer .leftButton {*/
+/*    height: 100%;*/
+/*    transform: skewX(20deg);*/
+/*    margin-right: 11px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/

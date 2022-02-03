@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import PhonePage from "./index";
 import axios from 'axios'
 
-const PhonePageContainer = ({switchToFinalPage, backToVideoPage, videoRef}) => {
+const PhonePageContainer = ({switchToFinalPage, backToVideoPage, isFinalPageVisible}) => {
 
         const LAST_NUMBER_SYMBOL = 15;
 
@@ -83,6 +83,7 @@ const PhonePageContainer = ({switchToFinalPage, backToVideoPage, videoRef}) => {
                        onPersonalDataCheckbox={onPersonalDataCheckbox}
                        onExitButton={onExitButton}
                        onNumberButton={onNumberButton}
+                       isFinalPageVisible={isFinalPageVisible}
                        personalDataCheckbox={personalDataCheckbox}
                        isNumberError={isNumberError}
                        number={number}/>

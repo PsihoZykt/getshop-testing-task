@@ -7,7 +7,27 @@
     align-items: center;
     gap: 20px;
 }
+.finalPage {
+    height: 100%;
+    background-color: #86D3F4;
+    width: 380px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
+.finalPage .header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+.finalPage div {
+    font-size: 14px;
+    line-height: 16px;
+}
 .phoneForm h2 {
     font-size: 26px;
     line-height: 30px;
@@ -146,5 +166,8 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    color: #EA0000;
+}
+.incorrectNumberColor {
     color: #EA0000;
 }
