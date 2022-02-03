@@ -123,8 +123,16 @@
     font-size: 16px;
     line-height: 19px;
     color: #4E4E4E;
-   text-transform: uppercase;
+    text-transform: uppercase;
+
+
 }
+
+.phoneSubmit .disabled {
+    background-color: grey;
+
+}
+
 .exitButton {
     border: 2px solid black;
     width: 84px;
@@ -165,9 +173,11 @@
 .incorrectNumberError {
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
     line-height: 19px;
     color: #EA0000;
 }
 .incorrectNumberColor {
     color: #EA0000;
+
 }
