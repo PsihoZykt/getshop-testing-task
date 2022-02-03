@@ -96,7 +96,9 @@ function NumberButton({ value, onNumberButton, className }) {
     <div
       role="button"
       tabIndex="0"
-      onKeyPress={() => onNumberButton(value)}
+      onKeyPress={(event) => {
+        if (event.charCode === 32) onNumberButton(value);
+      }}
       onClick={() => onNumberButton(value)}
       className={`${s.numberButton} ${numberButtonClassName}`}
     >

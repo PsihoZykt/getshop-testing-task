@@ -5,6 +5,7 @@ import PhonePage from './index';
 
 function PhonePageContainer({ switchToSliderPage, backToVideoPage }) {
   const LAST_NUMBER_SYMBOL = 15;
+  const FIRST_NUMBER_SYMBOL = 3;
 
   const [numberCounter, setNumberCounter] = useState(3);
   const [personalDataCheckbox, setPersonalDataCheckbox] = useState(false);
@@ -55,24 +56,23 @@ function PhonePageContainer({ switchToSliderPage, backToVideoPage }) {
     setIsNumberButtonDisabled(true);
     setIsNumberError(false);
     if (Number.isInteger(value)) {
-      if ((numberCounter === 5
-              || numberCounter === 9
-              || numberCounter === 12)
-          && numberCounter <= LAST_NUMBER_SYMBOL) {
+      if ((number[numberCounter + 1] === '(' || number[numberCounter + 1] === ')' || number[numberCounter + 1] === '-') && numberCounter <= LAST_NUMBER_SYMBOL) {
         setNumberCounter((counter) => counter + 2);
-      } else if (numberCounter <= LAST_NUMBER_SYMBOL) setNumberCounter((counter) => counter + 1);
+      } else if (numberCounter <= LAST_NUMBER_SYMBOL) {
+        setNumberCounter((counter) => counter + 1);
+      }
       const newNumber = setCharAt(number, numberCounter, value);
       setNumber(newNumber);
-    } else if (numberCounter > 3 && numberCounter <= 16) {
+    } else if (numberCounter > FIRST_NUMBER_SYMBOL && numberCounter <= LAST_NUMBER_SYMBOL + 1) {
       let newNumber;
-      if (numberCounter === 7 || numberCounter === 11 || numberCounter === 14) {
+      if (number[numberCounter - 1] === '(' || number[numberCounter - 1] === ')' || number[numberCounter - 1] === '-') {
         newNumber = setCharAt(number, numberCounter - 2, '_');
         setNumberCounter((counter) => counter - 2);
       } else if (numberCounter <= LAST_NUMBER_SYMBOL) {
         newNumber = setCharAt(number, numberCounter - 1, '_');
         setNumberCounter((counter) => counter - 1);
-      } else {
-        newNumber = setCharAt(number, 15, '_');
+      } else if (numberCounter === LAST_NUMBER_SYMBOL + 1) {
+        newNumber = setCharAt(number, LAST_NUMBER_SYMBOL, '_');
         setNumberCounter((counter) => counter - 1);
       }
       setNumber(newNumber);
