@@ -4,7 +4,7 @@
 
 - Entry page with background video
   (you can pause\start it with clicks,
-also video pauses when you leaving this page,
+also video pauses when you're leaving this page,
 so when you return to this page video continues
 playing)
 - Phone page, where you input your phone.
