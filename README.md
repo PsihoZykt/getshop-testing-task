@@ -1,6 +1,6 @@
-#Testing task for GetShopTV
+# Testing task for GetShopTV
 
-#Content
+# Content
 
 - Entry page with background video
   (you can pause\start it with clicks,
@@ -23,3 +23,8 @@ with left\right arrows on your keyboard, or just by clicking
 on arrows
 
 You can return to Video page by clicking X on right-top corner of screen
+
+# Preview
+![Video Page](https://user-images.githubusercontent.com/34924425/152328891-0e76add8-2b30-4400-a935-8173f59f52ef.png)
+![Phone Page](https://user-images.githubusercontent.com/34924425/152328897-65aa2528-fb29-46d6-a6be-596d0ae86a57.png)
+![Slider page](https://user-images.githubusercontent.com/34924425/152328903-4c276379-d63f-4073-8edb-eabc2fe5f97c.png)
