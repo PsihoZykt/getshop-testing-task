@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from './bannerEntry.module.css';
+import s from './index.module.css';
 import QrCode from '../../UI/QrCode';
 
-function BannerEntry({ switchToPhonePage }) {
+function EntryBanner({ switchToPhonePage }) {
   return (
     <div className={s.bannerEntry}>
       <h2>
@@ -30,7 +30,7 @@ function BannerEntry({ switchToPhonePage }) {
   );
 }
 
-BannerEntry.propTypes = {
+EntryBanner.propTypes = {
   switchToPhonePage: PropTypes.func.isRequired,
 };
-export default BannerEntry;
+export default EntryBanner;

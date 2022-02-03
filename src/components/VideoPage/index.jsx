@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import s from '../../App.module.css';
 import openingVideo from '../../assets/video/Volvo Trucks - The Epic Split feat. Van Damme.mp4';
-import BannerEntry from './bannerEntry';
+import EntryBanner from './EntryBanner';
 
 function VideoPage({ switchToPhonePage, videoRef, isVideoPageVisible }) {
   useEffect(() => {
@@ -17,7 +17,7 @@ function VideoPage({ switchToPhonePage, videoRef, isVideoPageVisible }) {
       <video muted ref={videoRef} onClick={onToggleVideo} className={s.openingVideo}>
         <source src={openingVideo} type="video/mp4" />
       </video>
-      <BannerEntry switchToPhonePage={switchToPhonePage} />
+      <EntryBanner switchToPhonePage={switchToPhonePage} />
     </div>
   );
 }
