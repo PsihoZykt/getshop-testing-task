@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/getshop-testing-task/static/css/main.c866fb86.css",
-    "main.js": "/getshop-testing-task/static/js/main.2d94824d.js",
+    "main.css": "/getshop-testing-task/static/css/main.dbafe7c5.css",
+    "main.js": "/getshop-testing-task/static/js/main.8fcc0863.js",
     "static/media/Volvo Trucks - The Epic Split feat. Van Damme.mp4": "/getshop-testing-task/static/media/Volvo Trucks - The Epic Split feat. Van Damme.1a6cb1a0ad22a3427f9e.mp4",
     "static/media/slide_2.png": "/getshop-testing-task/static/media/slide_2.bd10535c0bfbb90bfe5c.png",
     "static/media/slide_3.png": "/getshop-testing-task/static/media/slide_3.1e0e5fdf81c4c4ccefab.png",
@@ -12,11 +12,11 @@
     "static/media/leftButton.svg": "/getshop-testing-task/static/media/leftButton.147e062b512d6e5a764fe1a92aeb9f6e.svg",
     "static/media/exitButton.svg": "/getshop-testing-task/static/media/exitButton.bfc8064730aa5717858ec90d3c1604fb.svg",
     "static/media/personalDataCheckbox.svg": "/getshop-testing-task/static/media/personalDataCheckbox.a4df113f80cd8e8af130.svg",
-    "main.c866fb86.css.map": "/getshop-testing-task/static/css/main.c866fb86.css.map",
-    "main.2d94824d.js.map": "/getshop-testing-task/static/js/main.2d94824d.js.map"
+    "main.dbafe7c5.css.map": "/getshop-testing-task/static/css/main.dbafe7c5.css.map",
+    "main.8fcc0863.js.map": "/getshop-testing-task/static/js/main.8fcc0863.js.map"
   },
   "entrypoints": [
-    "static/css/main.c866fb86.css",
-    "static/js/main.2d94824d.js"
+    "static/css/main.dbafe7c5.css",
+    "static/js/main.8fcc0863.js"
   ]
 }
