@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import PhonePage from "./index";
 import axios from 'axios'
 
-const PhonePageContainer = ({switchToFinalPage, backToVideoPage, isFinalPageVisible}) => {
+const PhonePageContainer = ({switchToFinalPage, backToVideoPage, isFinalPageVisible: isSliderPageVisible}) => {
 
         const LAST_NUMBER_SYMBOL = 15;
 
@@ -29,7 +29,7 @@ const PhonePageContainer = ({switchToFinalPage, backToVideoPage, isFinalPageVisi
             backToVideoPage();
         }
         let validateNumber = () => {
-            return axios.get(`http://apilayer.net/api/validate?access_key=fb06d83a07193e429de6e8936e3ad69d&number=${number.substring(2)}&country_code=RU&format=1`)
+            return axios.get(`http://apilayer.net/api/validate?access_key=de2bac097402031eeae69683198eb6aa&number=${number.substring(2)}&country_code=RU&format=1`)
 
         }
         const [number, setNumber] = useState("+7(___)___-__-__")
@@ -83,7 +83,7 @@ const PhonePageContainer = ({switchToFinalPage, backToVideoPage, isFinalPageVisi
                        onPersonalDataCheckbox={onPersonalDataCheckbox}
                        onExitButton={onExitButton}
                        onNumberButton={onNumberButton}
-                       isFinalPageVisible={isFinalPageVisible}
+                       isFinalPageVisible={isSliderPageVisible}
                        personalDataCheckbox={personalDataCheckbox}
                        isNumberError={isNumberError}
                        number={number}/>

@@ -7,7 +7,7 @@ import leftButton from '../../assets/img/leftButton.svg'
 import rightButton from '../../assets/img/rightButton.svg'
 import exitButton from "../../assets/img/exitButton.svg";
 
-const FinalPage = ({onExitButton}) => {
+const FinalPage = ({backToVideoPage}) => {
 
 
     const [sliderNumber, setSliderNumber] = useState(0);
@@ -53,7 +53,7 @@ const FinalPage = ({onExitButton}) => {
                 <img src={rightButton} alt="Arrow leads to next slide"/>
             </div>
         </div>
-        <div onClick={onExitButton} className={s.exitButton}>
+        <div onClick={backToVideoPage} className={s.exitButton}>
             <img src={exitButton}/>
         </div>
     </div>);

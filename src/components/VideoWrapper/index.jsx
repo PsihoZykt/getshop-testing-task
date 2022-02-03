@@ -3,7 +3,7 @@ import openingVideo from "../../assets/video/Volvo Trucks - The Epic Split feat.
 import BannerEntry from "./bannerEntry";
 import React, {useEffect} from "react";
 
-const VideoWrapper = ({switchToNumberBanner, videoRef, isVideoWrapperVisible}) => {
+const VideoWrapper = ({switchToNumberBanner: switchToPhonePage, videoRef, isVideoWrapperVisible: isVideoPageVisible}) => {
     useEffect(() => {
         videoRef.current.play();
     })
@@ -11,11 +11,11 @@ const VideoWrapper = ({switchToNumberBanner, videoRef, isVideoWrapperVisible}) =
         videoRef.current.paused ? videoRef.current.play() : videoRef.current.pause()
     }
     return (
-        <div style={{display: isVideoWrapperVisible ? "block" : "none"}} className={s.videoWrapper}>
+        <div style={{display: isVideoPageVisible ? "block" : "none"}} className={s.videoWrapper}>
             <video muted ref={videoRef} onClick={onToggleVideo} className={s.openingVideo}>
                 <source src={openingVideo} type="video/mp4"/>
             </video>
-            <BannerEntry switchToNumberBanner={switchToNumberBanner}/>
+            <BannerEntry switchToNumberBanner={switchToPhonePage}/>
         </div>
     );
 };
