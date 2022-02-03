@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import s from './index.module.css'
-import slider1 from '../../assets/img/slider_1.png'
-import slider2 from '../../assets/img/slider_2.png'
-import slider3 from '../../assets/img/slider_3.png'
+import slider1 from '../../assets/img/slide_1.png'
+import slider2 from '../../assets/img/slide_2.png'
+import slider3 from '../../assets/img/slide_3.png'
 import leftButton from '../../assets/img/leftButton.svg'
 import rightButton from '../../assets/img/rightButton.svg'
 import exitButton from "../../assets/img/exitButton.svg";
