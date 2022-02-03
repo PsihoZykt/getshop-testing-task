@@ -46,14 +46,14 @@ function SliderPage({ backToVideoPage }) {
     <div className={s.sliderPage} style={{ backgroundImage: `url(${sliderImgArr[sliderNumber]})` }}>
       <div className={s.arrowsWrapper}>
         <div role="button" onKeyPress={goToPreviousSlide} tabIndex={0} onClick={goToPreviousSlide} className={leftButtonClasses}>
-          <img src={leftButton} alt="Arrow leads to previous slide" />
+          <img loading="eager" src={leftButton} alt="Arrow leads to previous slide" />
         </div>
         <div role="button" onKeyPress={goToNextSlide} tabIndex={0} onClick={goToNextSlide} className={rightArrowClasses}>
-          <img src={rightButton} alt="Arrow leads to next slide" />
+          <img loading="eager" src={rightButton} alt="Arrow leads to next slide" />
         </div>
       </div>
       <div role="button" onKeyPress={backToVideoPage} tabIndex={0} onClick={backToVideoPage} className={s.exitButton}>
-        <img src={exitButton} alt="X symbol" />
+        <img loading="eager" src={exitButton} alt="X symbol" />
       </div>
     </div>
   );

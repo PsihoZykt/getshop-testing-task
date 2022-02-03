@@ -5,7 +5,7 @@ import s from './index.module.css';
 function QrCode() {
   return (
     <div>
-      <img className={s.qrCode} src={qrCode} alt="QR code leads to getshoptv.com" />
+      <img loading="eager" className={s.qrCode} src={qrCode} alt="QR code leads to getshoptv.com" />
     </div>
   );
 }

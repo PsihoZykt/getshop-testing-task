@@ -71,7 +71,7 @@ function PhonePage({
         </div>
       </div>
       <div role="button" onKeyPress={onExitButton} tabIndex={0} onClick={onExitButton} className={s.exitButton}>
-        <img src={exitButton} alt="X symbol" />
+        <img loading="eager" src={exitButton} alt="X symbol" />
       </div>
       <div className={`${s.qrCodeBanner} ${isLoading ? s.disabled : ''}`}>
         <div className={s.qrCodeText}>
@@ -83,7 +83,7 @@ function PhonePage({
           <br />
           информации
         </div>
-        <div><img src={qrCode} alt="Qr code leads to getshoptv" /></div>
+        <div><img loading="eager" src={qrCode} alt="Qr code leads to getshoptv" /></div>
 
       </div>
     </div>
