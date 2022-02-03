@@ -14,7 +14,7 @@ function VideoPage({ switchToPhonePage, videoRef, isVideoPageVisible }) {
   };
   return (
     <div style={{ display: isVideoPageVisible ? 'block' : 'none' }} className={s.videoWrapper}>
-      <video muted ref={videoRef} onClick={onToggleVideo} className={s.openingVideo}>
+      <video muted loop ref={videoRef} onClick={onToggleVideo} className={s.openingVideo}>
         <source src={openingVideo} type="video/mp4" />
       </video>
       <EntryBanner switchToPhonePage={switchToPhonePage} />
