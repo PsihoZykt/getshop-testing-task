@@ -18,7 +18,7 @@ function PhonePageContainer({ switchToSliderPage, backToVideoPage }) {
   const onExitButton = () => {
     backToVideoPage();
   };
-  const validateNumber = () => axios.get(`http://apilayer.net/api/validate?access_key=de2bac097402031eeae69683198eb6aa&number=${number.substring(2)}&country_code=RU&format=1`);
+  const validateNumber = () => axios.get(`https://apilayer.net/api/validate?access_key=de2bac097402031eeae69683198eb6aa&number=${number.substring(2)}&country_code=RU&format=1`);
   const onPhoneSubmit = () => {
     setIsLoading(true);
     if (personalDataCheckbox && number[LAST_NUMBER_SYMBOL] !== '_') {
