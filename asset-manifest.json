@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/getshop-testing-task/static/css/main.9292686d.css",
-    "main.js": "/getshop-testing-task/static/js/main.0cc622ce.js",
-    "static/media/Volvo Trucks - The Epic Split feat. Van Damme.mp4": "/getshop-testing-task/static/media/Volvo Trucks - The Epic Split feat. Van Damme.1a6cb1a0ad22a3427f9e.mp4",
-    "static/media/slide_2.png": "/getshop-testing-task/static/media/slide_2.bd10535c0bfbb90bfe5c.png",
-    "static/media/slide_3.png": "/getshop-testing-task/static/media/slide_3.1e0e5fdf81c4c4ccefab.png",
-    "static/media/bgImg.jpg": "/getshop-testing-task/static/media/bgImg.0fab57cab3ae7e316018.jpg",
-    "static/media/slide_1.png": "/getshop-testing-task/static/media/slide_1.9b04dffe91f171e5c8b3.png",
-    "index.html": "/getshop-testing-task/index.html",
-    "static/media/rightButton.svg": "/getshop-testing-task/static/media/rightButton.b63a97c9fa4bc510839734cf76d7e27d.svg",
-    "static/media/leftButton.svg": "/getshop-testing-task/static/media/leftButton.147e062b512d6e5a764fe1a92aeb9f6e.svg",
-    "static/media/exitButton.svg": "/getshop-testing-task/static/media/exitButton.bfc8064730aa5717858ec90d3c1604fb.svg",
-    "static/media/personalDataCheckbox.svg": "/getshop-testing-task/static/media/personalDataCheckbox.a4df113f80cd8e8af130.svg",
-    "main.9292686d.css.map": "/getshop-testing-task/static/css/main.9292686d.css.map",
-    "main.0cc622ce.js.map": "/getshop-testing-task/static/js/main.0cc622ce.js.map"
+    "main.css": "/static/css/main.fde6cdb7.css",
+    "main.js": "/static/js/main.1554d0d5.js",
+    "static/media/Volvo Trucks - The Epic Split feat. Van Damme.mp4": "/static/media/Volvo Trucks - The Epic Split feat. Van Damme.1a6cb1a0ad22a3427f9e.mp4",
+    "static/media/slide_2.png": "/static/media/slide_2.bd10535c0bfbb90bfe5c.png",
+    "static/media/slide_3.png": "/static/media/slide_3.1e0e5fdf81c4c4ccefab.png",
+    "static/media/bgImg.jpg": "/static/media/bgImg.0fab57cab3ae7e316018.jpg",
+    "static/media/slide_1.png": "/static/media/slide_1.9b04dffe91f171e5c8b3.png",
+    "index.html": "/index.html",
+    "static/media/rightButton.svg": "/static/media/rightButton.b63a97c9fa4bc510839734cf76d7e27d.svg",
+    "static/media/leftButton.svg": "/static/media/leftButton.147e062b512d6e5a764fe1a92aeb9f6e.svg",
+    "static/media/exitButton.svg": "/static/media/exitButton.bfc8064730aa5717858ec90d3c1604fb.svg",
+    "static/media/personalDataCheckbox.svg": "/static/media/personalDataCheckbox.a4df113f80cd8e8af130.svg",
+    "main.fde6cdb7.css.map": "/static/css/main.fde6cdb7.css.map",
+    "main.1554d0d5.js.map": "/static/js/main.1554d0d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9292686d.css",
-    "static/js/main.0cc622ce.js"
+    "static/css/main.fde6cdb7.css",
+    "static/js/main.1554d0d5.js"
   ]
 }
