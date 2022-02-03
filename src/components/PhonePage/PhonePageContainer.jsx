@@ -18,13 +18,22 @@ function PhonePageContainer({ switchToSliderPage, backToVideoPage }) {
   const onExitButton = () => {
     backToVideoPage();
   };
-  const validateNumber = () => axios.get(`//apilayer.net/api/validate?access_key=de2bac097402031eeae69683198eb6aa&number=${number.substring(2)}&country_code=RU&format=1`);
+  const options = {
+    method: 'GET',
+    url: 'https://veriphone.p.rapidapi.com/verify',
+    params: { phone: `${number.substring(2)}` },
+    headers: {
+      'x-rapidapi-host': 'veriphone.p.rapidapi.com',
+      'x-rapidapi-key': '3c7d0ef651msh125944662c799eep18d2cdjsn87f442c6b2e5',
+    },
+  };
+
+  const validateNumber = () => axios.request(options);
   const onPhoneSubmit = () => {
     setIsLoading(true);
     if (personalDataCheckbox && number[LAST_NUMBER_SYMBOL] !== '_') {
       validateNumber().then((res) => {
-        console.log(res.data);
-        if (res.data.valid) {
+        if (res.data.phone_valid) {
           switchToSliderPage();
         } else {
           setIsNumberError(true);
