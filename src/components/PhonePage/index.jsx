@@ -66,7 +66,7 @@ function PhonePage({
             и/или не дано согласие на обработку персональных данных
           </div>
         )}
-        <div role="button" onKeyPress={onPhoneSubmit} tabIndex={0} onClick={onPhoneSubmit} className={s.phoneSubmit}>
+        <div role="button" onKeyPress={onPhoneSubmit} tabIndex={0} onClick={onPhoneSubmit} className={`${s.phoneSubmit} ${(personalDataCheckbox && number[number.length - 1] !== '_') ? s.active : ''}`}>
           Подтвердить номер
         </div>
       </div>
@@ -97,7 +97,7 @@ function NumberButton({ value, onNumberButton, className }) {
       role="button"
       tabIndex="0"
       onKeyPress={(event) => {
-        if (event.charCode === 32) onNumberButton(value);
+        if (event.charCode === 32 || event.charCode === 13) onNumberButton(value);
       }}
       onClick={() => onNumberButton(value)}
       className={`${s.numberButton} ${numberButtonClassName}`}

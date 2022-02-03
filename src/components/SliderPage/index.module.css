@@ -48,12 +48,9 @@
     align-items: center;
     background-color: white;
 }
-
-/*.arrowContainer .leftButton {*/
-/*    height: 100%;*/
-/*    transform: skewX(20deg);*/
-/*    margin-right: 11px;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
+.exitButton:hover, .exitButton:focus {
+    filter: invert(100%);
+}
+.arrow:focus, .arrow:hover {
+box-shadow: 0 0 5px #86D3F4;
+}

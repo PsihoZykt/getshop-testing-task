@@ -71,6 +71,10 @@
     background: #000000;
     color: white;
 }
+.numberButton:focus {
+    background-color: black;
+    color: white;
+}
 .span3 {
     grid-column: span 2;
 }
@@ -80,8 +84,6 @@
     width: 273px;
     margin-top: 19px;
     margin-left: 9px;
-
-
 }
 .personalData input {
     position: absolute;
@@ -100,6 +102,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
+}
+.personalData .personalDataCheckbox:focus+label::before, .personalDataCheckbox:hover+label::before {
+    box-shadow: 0 0 5px black;
 }
 .personalDataCheckbox:checked+label::before {
     background-image: url(../../assets/img/personalDataCheckbox.svg);
@@ -127,9 +132,12 @@
 
 
 }
-
-.phoneSubmit .disabled {
-    background-color: grey;
+.phoneSubmit.active {
+    background-color: black;
+    color: white;
+}
+.phoneSubmit:focus, .phoneSubmit:hover {
+    box-shadow: 0 0 20px black;
 
 }
 
@@ -144,6 +152,9 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+.exitButton:focus, .exitButton:hover {
+    filter: invert(100%);
 }
 .phonePage {
     height: 100%;
