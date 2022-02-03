@@ -23,10 +23,7 @@ function VideoPage({ switchToPhonePage, videoRef, isVideoPageVisible }) {
 }
 VideoPage.propTypes = {
   switchToPhonePage: PropTypes.func.isRequired,
-  videoRef: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.shape({ current: PropTypes.elementType }),
-  ]).isRequired,
+  videoRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }).isRequired,
   isVideoPageVisible: PropTypes.bool.isRequired,
 
 };

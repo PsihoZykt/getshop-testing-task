@@ -13,7 +13,6 @@ function App() {
   const [isVideoPageVisible, setIsVideoPageVisible] = useState(true);
   const [isPhonePageVisible, setIsPhonePageVisible] = useState(false);
   const [isSliderPageVisible, setIsSliderPageVisible] = useState(false);
-
   // I can't handle video ( stop it ) inside videoComponent,
   // because I can't unmount this component ( Or videoRef sets to null, and I can't access it )
   // So, if I can't unmount component,

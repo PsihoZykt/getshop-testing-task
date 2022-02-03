@@ -109,7 +109,7 @@ function NumberButton({ value, onNumberButton, className }) {
 
 export default PhonePage;
 NumberButton.propTypes = {
-  value: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'стереть']).isRequired,
+  value: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'Стереть']).isRequired,
   onNumberButton: PropTypes.func.isRequired,
   className: PropTypes.string,
 };

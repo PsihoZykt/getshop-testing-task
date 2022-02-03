@@ -25,7 +25,7 @@ function PhonePageContainer({ switchToSliderPage, backToVideoPage }) {
     params: { phone: `${number.substring(2)}` },
     headers: {
       'x-rapidapi-host': 'veriphone.p.rapidapi.com',
-      'x-rapidapi-key': '3c7d0ef651msh125944662c799eep18d2cdjsn87f442c6b2e5',
+      'x-rapidapi-key': process.env.REACT_APP_VERIFY_NUMBER_API_KEY,
     },
   };
 
